@@ -19,8 +19,16 @@
     let randomZen= zen[randomIndex];
 
     res.status(200).send(randomZen);
-}
 
-};
+}, getColorOne: (req, res) =>{
+    const color = ["Everything is working perfectly"]
+    res.status(200).send(color);
+
+    }, getColorTwo: (req, res) =>{
+        const color = ["Everything is working perfectly"]
+        res.status(200).send(color);
+    }}; 
+    
+
 
     
