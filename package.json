@@ -1,0 +1,25 @@
+{
+  "name": "5-5-back-end-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntoliverapp/5-5-assessment-back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntoliverapp/5-5-assessment-back-end/issues"
+  },
+  "homepage": "https://github.com/ntoliverapp/5-5-assessment-back-end#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

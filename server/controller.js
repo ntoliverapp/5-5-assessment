@@ -1,27 +1,26 @@
-const compliments = ["Gee, you're a smart cookie!",
-                       "Cool shirt!",
-                       "Your Javascript skills are stellar.",
-    ];
-    let randomIndex = Math.floor(Math.random() * compliments.length);
-    let randomCompliment = compliments[randomIndex];
-    // let newCompliment = {
-    //     compliment: [compliments]
-    // }
-    // choose random compliment
+
+   
+
     module.exports={
     getAllCompliments: (req, res) =>{
+    const compliments = ["Gee, you're a smart cookie!",
+                       "Cool shirt!",
+                       "Your Javascript skills are stellar."
+    ];
 
+    let randomIndex = Math.floor(Math.random() * compliments.length);
+    let randomCompliment = compliments[randomIndex];
   
     res.status(200).send(randomCompliment);
-},}
+}, getZen: (req, res) =>{
+    const zen = ["Each Morning we are born again. What we do today is what matters most.",  "Life is a balance of holding on and letting go.", "When you realize nothing is lacking, the whole world belongs to you. - Lao Tzu"];
 
-    // addNewCompliment:(req, res)=>{
-//         const {compliments} = req.body
+    let randomIndex = Math.floor(Math.random() * zen.length);
+    let randomZen= zen[randomIndex];
 
-//         for (let i = 0; i < compliments.length; i++){
-//             compliments[i].push(newCompliment)
-//             res.status(200).send(randomCompliment)
-//         }
-//     }
-// }
-// addNewCompliment("you're a winner!")
+    res.status(200).send(randomZen);
+}
+
+};
+
+    
