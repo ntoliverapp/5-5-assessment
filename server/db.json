@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Meet the Zen Cat Shironeko",
+      "zenmage" : "https://img.huffingtonpost.com/asset/5be3834c2000007505028665.jpeg?ops=scalefit_960_noupscale",
+      "readmore": "https://www.huffpost.com/entry/zen-master-cat-shironeko_n_5310157" 
+    },
+
+    {
+        "id": 2,
+        "name": "The Mysterious Zen Duck",
+        "zenmage" : "https://cdn-1.worldwebs.com/assets//images/f/b3240c82055ca7119156b2278f76e57d.jpg?49067440",
+        "readmore": "https://www.nytimes.com/2018/10/31/nyregion/mandarin-duck-central-park-pond.html"
+    },
+    {
+        "id": 3,
+        "name": "The Zen Dog Named Oliver",
+        "zenmage" : "https://s36700.pcdn.co/wp-content/uploads/2020/05/Oliver_Hi_MRogers_0634.png",
+        "readmore": "https://www.dogster.com/lifestyle/the-zen-dog"
+    }
+  ]

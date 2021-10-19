@@ -14,6 +14,9 @@ app.get("/api/compliment", ctrl.getAllCompliments)
 app.get("/api/zen", ctrl.getZen)
 
 app.get("/api/colorone", ctrl.getColorOne)
-app.get("/api/colortwo", ctrl.getColorTwo)
+
+app.get('/api/animals', ctrl.getAnimals);
+app.post('/api/animals', ctrl.createAnimals);
+app.delete('/api/animals/:id', ctrl.deleteAnimal);
 
 app.listen(4000, () => console.log("Server running on 4000"));

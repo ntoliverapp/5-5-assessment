@@ -1,4 +1,5 @@
-
+const animals = require('./db.json');
+let globalId = 4
    
 
     module.exports={
@@ -24,11 +25,32 @@
     const color = ["Everything is working perfectly"]
     res.status(200).send(color);
 
-    }, getColorTwo: (req, res) =>{
-        const color = ["Everything is working perfectly"]
-        res.status(200).send(color);
-    }}; 
-    
+    }, getAnimals: (req, res) => {
+        res.status(200).send(animals)
 
+},
+createAnimals: (req, res) => {
+    const{ name, zenmage, readmore}
+    = req.body
+    const newAnimal = {
+        name, 
+        zenmage,
+        readmore,
+        id: globalId
 
+    }
+    animals.push(newAnimal);
+    console.log(animals);
+    res.status(200).send(animals);
+    globalId++;
+}, deleteAnimal: (req, res) => {
+    const {id} = req.params
+
+    let index = animals.findIndex((elem) => +elem.id=== +id)
+
+    animals.splice(index, 1)
+    res.status(200).send(animals)
+}
+
+}; 
     
